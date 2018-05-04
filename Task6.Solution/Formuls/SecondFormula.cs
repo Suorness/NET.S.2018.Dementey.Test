@@ -13,11 +13,12 @@ namespace Task6.Solution.Formuls
             var list = new List<int>();
             int a = first;
             int b = second;
-
+            list.Add(a);
+            list.Add(b);
 
             for (int i = 0; i < count; i++)
             {
-                var result = 6 * a - 8 * b;
+                var result = 6 * b - 8 * a;
                 a = b;
                 b = result;
                 list.Add(result);

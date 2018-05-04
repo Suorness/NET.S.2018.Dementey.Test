@@ -10,9 +10,10 @@ namespace Task6.Solution.Formuls
             var list = new List<double>();
             double a = first;
             double b = second;
+            list.Add(a);
+            list.Add(b);
 
-
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count ; i++)
             {
                 var result = b + a / b;
                 a = b;

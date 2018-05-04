@@ -18,7 +18,7 @@
                 throw new IndexOutOfRangeException(nameof(count));
             }
 
-            return formula.CalculateEnumerable(first, second, count).ToArray();
+            return formula.CalculateEnumerable(first, second, count - 2).ToArray();
         }
     }
 }

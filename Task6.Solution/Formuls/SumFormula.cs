@@ -13,7 +13,8 @@ namespace Task6.Solution.Formuls
             var list = new List<int>();
             int a = first;
             int b = second;
-            
+            list.Add(a);
+            list.Add(b);
 
             for (int i = 0; i < count; i++)
             {
