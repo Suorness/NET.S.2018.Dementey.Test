@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IVerifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implementations\RepositoryService.cs" />
+    <Compile Include="Implementations\SqlRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
