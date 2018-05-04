@@ -40,7 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Document.cs" />
+    <Compile Include="Parts\BoldText.cs" />
+    <Compile Include="DocumentPart.cs" />
+    <Compile Include="Parts\HyperLink.cs" />
+    <Compile Include="ITransform.cs" />
+    <Compile Include="Parts\PlainText.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transformers\HtmlTransformer.cs" />
+    <Compile Include="Transformers\LatexTransformer.cs" />
+    <Compile Include="Transformers\PlaintTextTransformer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
