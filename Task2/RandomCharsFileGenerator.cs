@@ -11,26 +11,26 @@ namespace Task_2
 
         public string FileExtension => ".txt";
 
-        public void GenerateFiles(int filesCount, int contentLength)
-        {
-            for (var i = 0; i < filesCount; ++i)
-            {
-                var generatedFileContent = this.GenerateFileContent(contentLength);
+        //public void GenerateFiles(int filesCount, int contentLength)
+        //{
+        //    for (var i = 0; i < filesCount; ++i)
+        //    {
+        //        var generatedFileContent = this.GenerateFileContent(contentLength);
 
-                var generatedFileName = $"{Guid.NewGuid()}{this.FileExtension}";
+        //        var generatedFileName = $"{Guid.NewGuid()}{this.FileExtension}";
 
-                this.WriteBytesToFile(generatedFileName, generatedFileContent);
-            }
-        }
+        //        this.WriteBytesToFile(generatedFileName, generatedFileContent);
+        //    }
+        //}
 
-        private byte[] GenerateFileContent(int contentLength)
-        {
-            var generatedString = this.RandomString(contentLength);
+        //private byte[] GenerateFileContent(int contentLength)
+        //{
+        //    var generatedString = this.RandomString(contentLength);
 
-            var bytes = Encoding.Unicode.GetBytes(generatedString);
+        //    var bytes = Encoding.Unicode.GetBytes(generatedString);
 
-            return bytes;
-        }
+        //    return bytes;
+        //}
 
         private string RandomString(int Size)
         {
@@ -43,14 +43,14 @@ namespace Task_2
             return new string(chars.ToArray());
         }
 
-        private void WriteBytesToFile(string fileName, byte[] content)
-        {
-            if (!Directory.Exists(WorkingDirectory))
-            {
-                Directory.CreateDirectory(WorkingDirectory);
-            }
+        //private void WriteBytesToFile(string fileName, byte[] content)
+        //{
+        //    if (!Directory.Exists(WorkingDirectory))
+        //    {
+        //        Directory.CreateDirectory(WorkingDirectory);
+        //    }
 
-            File.WriteAllBytes($"{WorkingDirectory}//{fileName}", content);
-        }
+        //    File.WriteAllBytes($"{WorkingDirectory}//{fileName}", content);
+        //}
     }
 }
