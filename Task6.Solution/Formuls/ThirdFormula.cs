@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-
-
-namespace Task6.Solution.Formuls
+﻿namespace Task6.Solution.Formuls
 {
+    using System.Collections.Generic;
+
     public class ThirdFormula : IFormula<double>
     {
         public IEnumerable<double> CalculateEnumerable(double first, double second, int count)
@@ -13,7 +12,7 @@ namespace Task6.Solution.Formuls
             list.Add(a);
             list.Add(b);
 
-            for (int i = 0; i < count ; i++)
+            for (int i = 0; i < count; i++)
             {
                 var result = b + a / b;
                 a = b;

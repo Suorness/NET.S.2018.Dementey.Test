@@ -10,7 +10,6 @@ namespace Task4.Solution.SecondWay
 
     public class CalculatorWithDelegate
     {
-
         public double CalculateAverage(List<double> values, CalcDelegate calcDelegate)
         {
             if (values == null)

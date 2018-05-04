@@ -2,6 +2,7 @@
 {
     using System;
     using Task1.Solution;
+
     public class CustomVerifier : IVerifier
     {
         private readonly string CheckString;
@@ -10,6 +11,7 @@
         {
             CheckString = checkString ?? throw new ArgumentNullException(nameof(checkString));
         }
+
         public Tuple<bool, string> Verify(string password)
         {
             if (password.Contains(CheckString))

@@ -15,7 +15,7 @@
                 throw new ArgumentNullException(nameof(part));
             }
 
-            return "**" + part.Text + "**"; 
+            return "**" + part.Text + "**";
         }
 
         public string Transform(HyperLink part)

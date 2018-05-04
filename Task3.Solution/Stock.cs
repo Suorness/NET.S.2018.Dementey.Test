@@ -8,10 +8,9 @@
 
     public class Stock
     {
-        public EventHandler<StockEventArgs> StockChange = delegate {};
+        public EventHandler<StockEventArgs> StockChange = delegate { };
 
-
-        public void  Market()
+        public void Market()
         {
             Random rnd = new Random();
             var stockEventArgs = new StockEventArgs(rnd.Next(20, 40), rnd.Next(30, 50));
@@ -19,7 +18,7 @@
         }
 
 
-        protected virtual void  Notify(StockEventArgs stockEventArgs)
+        protected virtual void Notify(StockEventArgs stockEventArgs)
         {
             StockChange(this, stockEventArgs);
         }

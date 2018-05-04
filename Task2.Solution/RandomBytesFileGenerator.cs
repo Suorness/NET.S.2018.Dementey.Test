@@ -13,6 +13,7 @@ namespace Task2.Solution
             FileExtension = ".bytes";
             WorkingDirectory = "Files with random bytes";
         }
+
         protected override byte[] GenerateFileContent(int contentLength)
         {
             var random = new Random();

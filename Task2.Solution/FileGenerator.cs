@@ -7,9 +7,7 @@
     {
         public string WorkingDirectory { get; protected set; }
 
-        public string FileExtension { get; protected set; }
-
-        
+        public string FileExtension { get; protected set; }        
 
         public void GenerateFiles(int filesCount, int contentLength)
         {
